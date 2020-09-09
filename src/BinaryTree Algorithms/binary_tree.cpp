@@ -1,5 +1,6 @@
 #include "binary_tree.h"
 
+#include "tree_traversal.h"
 #include <cmath>
 
 BinaryTree::BinaryTree()
@@ -15,7 +16,26 @@ BinaryTree::~BinaryTree()
 auto BinaryTree::display(const Traversal_Type &type) const
 	-> void
 	{
-	//will implement
+	switch(type)
+		{
+		case Traversal_Type::PRE_ORDER:
+			{
+			preorder(m_head);			
+			return;
+			}
+		    case Traversal_Type::IN_ORDER:
+			{
+			inorder(m_head);
+			return;
+			}
+		case Traversal_Type::POST_ORDER:
+			{
+			postorder(m_head);
+			return;
+			}
+		default:
+			break;
+		}
 	}
 
 auto BinaryTree::insert(Node* &head, int value) 
