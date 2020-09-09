@@ -16,7 +16,7 @@ auto reverse_string(char * const param)
 	auto index   = size_t{0}; 
 	for(size_t iter = 0; iter < opcount; ++iter)
 		{
-		index 		 = size - iter - 1;
+		index		 = size - iter - 1;
 		ch           = param[iter];
 		param[iter]  = param[index];
 		param[index] = ch;
