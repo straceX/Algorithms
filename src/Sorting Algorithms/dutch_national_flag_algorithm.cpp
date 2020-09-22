@@ -12,15 +12,15 @@ auto dutch_national_flag_algorithm(int arry[], const size_t size)
 		{
 		switch (arry[mindex]) 
 			{ 
-  	    	case 0: 
-        		std::swap(arry[sindex++], arry[mindex++]); 
-            	break;
-        	case 1: 
-            	++mindex; 
-            	break; 
-        	case 2: 
-            	std::swap(arry[mindex], arry[eindex--]); 
-            	break; 
-        	} 
+			case 0: 
+				std::swap(arry[sindex++], arry[mindex++]); 
+				break;
+			case 1: 
+				++mindex; 
+				break; 
+			case 2: 
+				std::swap(arry[mindex], arry[eindex--]); 
+				break; 
+			} 
 		}
 	}

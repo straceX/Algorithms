@@ -3,6 +3,8 @@
 #include "binary_tree.h"
 #include "check_binary_search_tree.h"
 
+#include <limits>
+
 auto check_binary_tree_is_bstv1(const BinaryTree::Node *root, int &pivotValue) 
 	-> bool
 	{
